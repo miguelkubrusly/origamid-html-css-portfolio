@@ -1,0 +1,23 @@
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.introducao div {
+  position: relative;
+}
+
+.introducao * {
+  padding: 0.5rem;
+}
+
+.introducao div::before {
+  content: url("/img/detalhe.svg");
+  position: absolute;
+  left: -1rem;
+  top: -0.65rem;
+  z-index: -1;
+}
