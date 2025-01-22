@@ -45,3 +45,15 @@ section,
 footer {
   max-width: 45rem;
 }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 14px;
+  }
+}
