@@ -3,11 +3,18 @@
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
   padding: 1rem 2rem;
+  margin: 0 auto;
   align-items: center;
+}
+
+.introducao img {
+  padding: 0;
+  padding-left: 1.5rem;
 }
 
 .introducao div {
   position: relative;
+  font-size: 1.2rem;
 }
 
 .introducao * {
@@ -15,9 +22,48 @@
 }
 
 .introducao div::before {
-  content: url("/img/detalhe.svg");
+  content: "";
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  background: url("/img/detalhe.svg") no-repeat center center;
+  background-size: cover;
   position: absolute;
-  left: -1rem;
-  top: -0.65rem;
+  left: -0.1rem;
+  top: -0.5rem;
   z-index: -1;
+}
+
+@media (max-width: 800px) {
+  .introducao div {
+    font-size: 1rem;
+  }
+  .introducao div::before {
+    width: 30rem;
+    height: 2rem;
+    top: 3.5rem;
+    left: -6.6rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .introducao {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  .introducao img {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 12px;
+  }
 }
