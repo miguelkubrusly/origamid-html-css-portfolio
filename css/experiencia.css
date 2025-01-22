@@ -23,6 +23,9 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   position: relative;
+  background-color: #e0e0e0;
+  padding: 0.75rem;
+  border-radius: 0.2rem;
 }
 .empresa-ano {
   width: 12ch;
@@ -67,7 +70,69 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  /* justify-content:space-between; */
   align-self: flex-start;
   padding-top: 0.5rem;
+}
+
+.empresa-habilidades li {
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  .experiencia-subtitulo {
+    color: inherit;
+    padding: 0;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    word-break: initial;
+    max-width: fit-content;
+  }
+
+  .empresa {
+    margin-top: 1.2rem;
+  }
+
+  .empresa-ano {
+    position: initial;
+    grid-column: 1;
+    grid-row: 3;
+    width: auto;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .empresa-ano::before {
+    content: "Ano: ";
+  }
+
+  .empresa-nome::before {
+    left: -1.19rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .experiencia-subtitulo {
+    letter-spacing: normal;
+    text-align: center;
+  }
+}
+
+@media (max-width: 350px) {
+  .empresa {
+    gap: 0.4rem;
+  }
+
+  .empresa-habilidades {
+    flex-direction: column;
+  }
 }
