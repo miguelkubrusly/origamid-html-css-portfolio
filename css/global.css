@@ -1,25 +1,43 @@
-body{
+html {
+  font-size: 20px;
+}
+
+body {
   margin: 0;
   font-family: "Fira Sans", Arial, sans-serif;
   color: #141414;
 }
 
-h1,h2,h3,h4,h5,h6,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
-ul{
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: #141414;
 }
 
-img{
+img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+header,
+main,
+section,
+footer {
+  max-width: 50rem;
 }
