@@ -1,9 +1,19 @@
 .footer {
   background: #000000;
-  position: relative;
 }
 
-.footer::before {
+.footer-container {
+  position: relative;
+  max-width: 60rem;
+  padding: 6rem 1rem 3rem 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.footer-container::before {
   content: "";
   display: inline-block;
   width: 5rem;
@@ -12,18 +22,6 @@
   background-size: cover;
   position: absolute;
   top: -2rem;
-  left: 2rem;
-
-}
-
-.footer-container {
-  max-width: 60rem;
-  padding: 6rem 1rem 3rem 1rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  align-items: center;
 }
 
 .footer-texto {
