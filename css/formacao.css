@@ -1,13 +1,16 @@
 .formacao {
   background-color: #141414;
   color: white;
-  padding: 5rem 0;
+  padding: 5rem 2rem;
+  
 }
 .formacao-container {
+  margin: 4rem;
   display: grid;
-  gap: 3rem;
+  gap: 6rem;
   grid-template-columns: 1fr 2fr;
   justify-self: center;
+  
 }
 .formacao-subtitulo {
   text-transform: uppercase;
@@ -15,7 +18,7 @@
   word-break: break-all;
   width: 4ch;
   color: black;
-  line-height: 1.8ch;
+  line-height: 1.7ch;
 }
 
 .formacao-conteudo {
@@ -138,4 +141,16 @@
 
 .idiomas li span {
   color: #a3a3a3;
+}
+
+@media (max-width:800px){
+  
+}
+
+@media (max-width:500px){
+  
+}
+
+@media (max-width:350px){
+  
 }
