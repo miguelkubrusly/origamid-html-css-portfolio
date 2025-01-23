@@ -39,10 +39,7 @@ img {
   height: auto;
 }
 
-header,
-main,
-section,
-footer {
+.header, .introducao, .experiencia, .formacao-container {
   max-width: 45rem;
 }
 
