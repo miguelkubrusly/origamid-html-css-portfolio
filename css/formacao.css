@@ -2,7 +2,6 @@
   background-color: #141414;
   color: white;
   padding: 5rem 2rem;
-  
 }
 .formacao-container {
   margin: 4rem;
@@ -10,7 +9,6 @@
   gap: 6rem;
   grid-template-columns: 1fr 2fr;
   justify-self: center;
-  
 }
 .formacao-subtitulo {
   text-transform: uppercase;
@@ -143,14 +141,33 @@
   color: #a3a3a3;
 }
 
-@media (max-width:800px){
-  
+
+
+@media (max-width: 900px) {
+  .formacao-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  .formacao-subtitulo {
+    color: inherit;
+    padding: 0;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    word-break: initial;
+    width: auto;
+  }
+
 }
 
-@media (max-width:500px){
-  
+@media (max-width: 500px) {
+  .faculdade-lista {
+    flex-direction: column;
+  }
 }
 
-@media (max-width:350px){
-  
+@media (max-width: 350px) {
 }
